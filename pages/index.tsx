@@ -15,7 +15,7 @@ import { getOpenGraphImage } from "../core/og-image";
 import { Blog } from "../components/sections/blog";
 
 interface AppProps {
-  posts: Post[];
+  // posts: Post[];
   //achievements: Achievement[];
   projects: Project[];
   // repos: {
@@ -26,12 +26,12 @@ interface AppProps {
 
 export const getStaticProps: GetStaticProps<AppProps> = async () => {
   const [
-    posts,
+    // posts,
     projects,
     //achievementsData,
     // { contributedRepos, starredRepos },
   ] = await Promise.all([
-    getBlogTable<Post>(config.notionBlogTableId),
+    //getBlogTable<Post>(config.notionBlogTableId),
     getBlogTable<Project>(config.notionProjectTableId),
     // getBlogTable<Omit<Achievement, "blockMap">>(
     //   config.notionAchievementTableId
