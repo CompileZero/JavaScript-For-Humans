@@ -119,7 +119,7 @@ const BlogPost: React.FC<PostProps> = ({
           <h3 className="font-bold text-gray-600 my-4 uppercase tracking-wider">
             Continue reading
           </h3>
-          <Link href="/work">
+          <Link href="/">
             <a className="font-bold text-blue-600 my-4 ">View all →</a>
           </Link>
         </div>

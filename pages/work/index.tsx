@@ -16,7 +16,7 @@ export const getStaticProps: GetStaticProps<AppProps> = async () => {
 
   return {
     props: {
-      projects: projects.filter(post => post.published),
+      projects: projects.filter((post) => post.published),
     },
     revalidate: 10,
   };
@@ -26,8 +26,8 @@ export default ({ projects }: AppProps) => (
   <>
     <Nav />
     <NextSeo
-      title={"Atharva Kulkarni ~ Work"}
-      description="A collection of some of my past work. Including Enterprise UI Design and Web Apps."
+      title={"JavaScript For Humans"}
+      description="A comprehensive guide to master JavaScript from the fundamentals to the advanced concepts."
     />
     <Work projects={projects} />
     <Footer />
